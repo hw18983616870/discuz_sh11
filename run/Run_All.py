@@ -3,7 +3,7 @@
 @author:多测师-黄sir
 @time:2021/3/13:10:34
 @email:hw18983616870@163.com
-@website:www.duoceshi.com
+@weD:\jenkins\workspace\test_dcs_sh11_02bsite:www.duoceshi.com
 ============================
 """
 '''此模块用来执行所有的测试用例'''
@@ -14,7 +14,7 @@ from config.Config import *
 from public.utils.HTMLTestRunner3_New import HTMLTestRunner
 from public.utils.mail3 import SendMail
 import time
-sys.path.append(path)
+sys.path.append(r'D:\jenkins\workspace\test_dcs_sh11_02')
 def run_all():
     discover = unittest.defaultTestLoader.discover(start_dir=testcase_path,
                                                    pattern='Test*.py')
