@@ -7,11 +7,14 @@
 ============================
 """
 '''此模块用来执行所有的测试用例'''
+import sys
+
 import unittest
 from config.Config import *
 from public.utils.HTMLTestRunner3_New import HTMLTestRunner
 from public.utils.mail3 import SendMail
 import time
+sys.path.append(path)
 def run_all():
     discover = unittest.defaultTestLoader.discover(start_dir=testcase_path,
                                                    pattern='Test*.py')
